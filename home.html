@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="overflow: hidden;">
+    <div class="header" data-aos="fade-down">
+        <section class="flex">
+            <a href="#home" class="logo">Teavia</a>
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="tours.html">tours</a>
+                <a href="destinations.html">destinations</a>
+                <a href="contact.html">contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </div>
+
+    <div class="container home" data-aos="zoom-out">
+        <section class="flex" data-aos="zoom-in" data-aos-delay="500">
+            <form action="" matgod="post">
+                <h3>search your tour</h3>
+                <p>where to</p>
+                <input type="text" name="address"
+                 required maxlength="50" placeholder="enter tour location"  class="box">
+                <p>whon to</p>
+                 <input type="date" name="data" class="box" required>
+                <p>how many</p>
+                 <input type="number" name="guests" min="1" max="10" 
+                 placeholder="number of guests" required maxlength="2" class="box"></inpur>
+                 <input type="submit" value="search tour" class="btn" name="search">
+            </form>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
